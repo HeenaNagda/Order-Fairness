@@ -1,0 +1,9 @@
+[submodule "libhotstuff_tx"]
+	path = libhotstuff_tx
+	url = https://github.com/HeenaNagda/libhotstuff_tx.git
+[submodule "Themis_tx"]
+	path = Themis_tx
+	url = https://github.com/HeenaNagda/Themis_tx.git
+[submodule "Rashnu"]
+	path = Rashnu
+	url = https://github.com/HeenaNagda/Rashnu.git
