@@ -8,10 +8,10 @@ added support for small-bank transactions.
 We have implemented Themis based on the algorithms given in the paper [Themis](https://www.cs.cornell.edu/~mahimna/themis.pdf). 
 Along with that we have also added support for small-bank transactions.
 * Rashnu: 
-A high-performance fair ordering protocol desined and implemented by us 
+A high-performance fair ordering protocol designed and implemented by us 
 with a small-bank transaction support.
 
-The directory structure of all the three projects is same.
+The directory structure of all the three projects is the same.
 
 # Rashnu Motivation
 
@@ -42,7 +42,7 @@ cd Rashnu/
 
 ### Run Rashnu locally
 * Make sure in the scripts/run_demo.sh file number of replicas are 0 to 3.
-* Make sure in hotstuff.conf file has exactly 4 replica signatures.
+* Make sure the hotstuff.conf file has exactly 4 replica signatures.
 * start 4 demo replicas with scripts/run_demo.sh
 * start the demo client with scripts/run_demo_client.sh in another terminal
 * Use Ctrl-C to terminate the client and replicas
@@ -53,7 +53,7 @@ cd Rashnu/
 
 ### Local Environment
 
-Note: Following steps needs to be done on your work computer (a
+Note: Following steps need to be done on your work computer (a
   work computer is your laptop/home computer).
 
 * Install the latest [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html).
@@ -70,7 +70,7 @@ Note: Following steps needs to be done on your work computer (a
   --recursive``). Finally, you have already built the repo so binaries
   ``hotstuff-keygen`` and ``hotstuff-tls-keygen`` are available in the root
   directory of the repo.
-* Right now, you should be at ``<path-to-your-Order-Fairness-repo>/Rashnu/scripts/deploy`` directory in your shell.
+* Right now, you should be at the ``<path-to-your-Order-Fairness-repo>/Rashnu/scripts/deploy`` directory in your shell.
 
 ### Remote Environment
 
@@ -90,7 +90,7 @@ But any machine with Ubuntu 18.04 installed may work, in general.
   be changed). 
   + Each client machine should be able to talk to all replica machines via TCP
   ranging from 20000.
-  + To properly configured the intra-network turn on firewall, and open TCP ports 10000, 20000, 22.
+  + To properly configure the intra-network, turn on the firewall, and open TCP ports 10000, 20000, 22.
   ``sudo ufw enable; sudo ufw allow 10000/tcp; sudo ufw allow 20000/tcp; sudo ufw allow 22/tcp; sudo ufw status verbose;``
 
 ## Step 2 - Generate the Deployment Setup
@@ -109,7 +109,7 @@ But any machine with Ubuntu 18.04 installed may work, in general.
 * Update the configuration flags according to the requirement in ``./gen_all.sh``.
 * Generate ``node.ini`` and ``hotstuff.gen.*.conf`` by running ``./gen_all.sh``.
 * Change the ssh key configuration, user name and paths carefully based on your remote machines home directory paths in ``group_vars/all.yml``.
-* Build ``Rashnu`` on all remote machines by ``./run.sh setup``.
+* Build ``Rashnu`` on all remote machine by ``./run.sh setup``.
 
 ## Step 3 - Run the Experiment
 
@@ -134,5 +134,5 @@ But any machine with Ubuntu 18.04 installed may work, in general.
   given the id like "myrun1"), so you need to make sure you always ``stop``
   (gracefully exit and all results are available) or ``reset`` (simply kill all
   processes) any historical runs to start fresh.
-* To check the whether processes are still alive: ``./run.sh check myrun1``.
+* To check whether processes are still alive: ``./run.sh check myrun1``.
 
