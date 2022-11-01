@@ -30,22 +30,22 @@ git submodule update --init --recursive
 cd Rashnu/
 
 ### ensure openssl and libevent are installed on your machine, more specifically, you need:
-CMake >= 3.9 (cmake)
-C++14 (g++)
-libuv >= 1.10.0 (libuv1-dev)
-openssl >= 1.1.0 (libssl-dev)
-on Ubuntu: sudo apt-get install libssl-dev libuv1-dev cmake make
+* CMake >= 3.9 (cmake)
+* C++14 (g++)
+* libuv >= 1.10.0 (libuv1-dev)
+* openssl >= 1.1.0 (libssl-dev)
+* on Ubuntu: sudo apt-get install libssl-dev libuv1-dev cmake make
 
 ### build project
-cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED=ON -DHOTSTUFF_PROTO_LOG=ON
-make
+* cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED=ON -DHOTSTUFF_PROTO_LOG=ON
+* make
 
 ### Run Rashnu locally
-Make sure in the scripts/run_demo.sh file number of replicas are 0 to 3.
-Make sure in hotstuff.conf file has exactly 4 replica signatures.
-start 4 demo replicas with scripts/run_demo.sh
-start the demo client with scripts/run_demo_client.sh in another terminal
-Use Ctrl-C to terminate the client and replicas
+* Make sure in the scripts/run_demo.sh file number of replicas are 0 to 3.
+* Make sure in hotstuff.conf file has exactly 4 replica signatures.
+* start 4 demo replicas with scripts/run_demo.sh
+* start the demo client with scripts/run_demo_client.sh in another terminal
+* Use Ctrl-C to terminate the client and replicas
 
 # Reproducing the Results
 
