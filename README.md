@@ -2,7 +2,7 @@
 
 This repository includes three remote repositories. 
 * libhotstuff_tx: 
-The main code base is taken from Hotstuff repository [libhotstuff](https://github.com/hot-stuff/libhotstuff.git) and 
+The code base is taken from Hotstuff repository [libhotstuff](https://github.com/hot-stuff/libhotstuff.git) and 
 added support for small-bank transactions.
 * Themis_tx: 
 We have implemented Themis based on the algorithms given in the paper [Themis](https://www.cs.cornell.edu/~mahimna/themis.pdf). 
@@ -24,10 +24,10 @@ resource.
 # Rashnu Installation
 
 ### install from the repo
-git clone https://github.com/HeenaNagda/Order-Fairness.git
-cd Order-Fairness/
-git submodule update --init --recursive
-cd Rashnu/
+* git clone https://github.com/HeenaNagda/Order-Fairness.git
+* cd Order-Fairness/
+* git submodule update --init --recursive
+* cd Rashnu/
 
 ### ensure openssl and libevent are installed on your machine, more specifically, you need:
 * CMake >= 3.9 (cmake)
