@@ -23,20 +23,20 @@ resource.
 
 # Rashnu Installation
 
-### install from the repo
+### Install from the repo
 * git clone https://github.com/HeenaNagda/Order-Fairness.git
 * cd Order-Fairness/
 * git submodule update --init --recursive
 * cd Rashnu/
 
-### ensure openssl and libevent are installed on your machine, more specifically, you need:
+### Ensure openssl and libevent are installed on your machine, more specifically, you need:
 * CMake >= 3.9 (cmake)
 * C++14 (g++)
 * libuv >= 1.10.0 (libuv1-dev)
 * openssl >= 1.1.0 (libssl-dev)
 * on Ubuntu: sudo apt-get install libssl-dev libuv1-dev cmake make
 
-### build project
+### Build project
 * cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED=ON -DHOTSTUFF_PROTO_LOG=ON
 * make
 
